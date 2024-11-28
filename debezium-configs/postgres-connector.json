@@ -1,0 +1,15 @@
+{
+    "name": "postgres-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "tasks.max": "1",
+        "database.hostname": "postgres",
+        "database.port": "5432",
+        "database.user": "admin",
+        "database.password": "secret_password",
+        "database.dbname": "monitoring_db",
+        "database.server.name": "monitoring_server",
+        "plugin.name": "pgoutput",
+        "table.include.list": "public.user_activities"
+    }
+}
